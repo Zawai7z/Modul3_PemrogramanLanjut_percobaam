@@ -44,5 +44,8 @@ public class TaxiTicket {
         System.out.println("From: " + info.getStartLocation());
         System.out.println("To: " + info.getDestination());
         System.out.println("Price (after tax): Rp" + finalPrice);
+        double diskon = 0.05; // 5% promo discount
+        finalPrice = finalPrice - (finalPrice * diskon);
+        System.out.println("Diskon Promo 5% diterapkan!");
     }
 }
